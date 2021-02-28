@@ -21,6 +21,6 @@
     - Clone repo
     - Navigate to src/com/company directory
     - Use javac command to compile java project (example below):
-        javac -d . .\Main.java .\MultiValueDict.java .\Constants.java .\AbstractDictionary.java .\Dictionary.java  
+        - javac -d . .\Main.java .\MultiValueDict.java .\Constants.java .\AbstractDictionary.java .\Dictionary.java  
     - Run application in correct package using: 
-        java com.company.Main
+        - java com.company.Main

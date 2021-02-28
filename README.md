@@ -14,6 +14,7 @@
             - AllMembers: Returns all the values in the dictionary. Returns nothing if there are none. Order is not guaranteed
             - Items: Returns all keys in the dictionary and all of their values. Returns nothing if there are none. Order is not guaranteed
             - Help : Returns all the functions available for multi-value dictionary with method signatures
+            - Exit : Exit application 
 
 ## System Requirements: 
     - Java 8 used to create application 

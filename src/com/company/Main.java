@@ -49,26 +49,26 @@ public class Main {
             multiValueDict.add(input[1], input[2]);
         } else if(input[0].equalsIgnoreCase(Constants.KEYS)) {
             printCollection(multiValueDict.getKeys());
-        } else if(input[0].equalsIgnoreCase(Constants.MEMBERS)) {
+        } else if(input.length == 2 && input[0].equalsIgnoreCase(Constants.MEMBERS)) {
             if(multiValueDict.keyExists(input[1])) {
                 printCollection(multiValueDict.getMembers(input[1]));
             } else {
                 throw new Exception("ERROR, key does not exist");
             }
-        } else if(input[0].equalsIgnoreCase(Constants.REMOVE)) {
+        } else if(input.length >= 2 && input[0].equalsIgnoreCase(Constants.REMOVE)) {
             if(input.length < 3) {
                 multiValueDict.removeAll(input[1]);
             } else {
                 multiValueDict.remove(input[1], input[2]);
             }
-        } else if(input[0].equalsIgnoreCase(Constants.REMOVEALL)) {
+        } else if(input.length == 2 && input[0].equalsIgnoreCase(Constants.REMOVEALL)) {
             multiValueDict.removeAll(input[1]);
         } else if(input[0].equalsIgnoreCase(Constants.CLEAR)) {
             multiValueDict.clear();
             System.out.println("Cleared Dictionary");
-        } else if(input[0].equalsIgnoreCase(Constants.KEYEXISTS)) {
+        } else if(input.length == 2 && input[0].equalsIgnoreCase(Constants.KEYEXISTS)) {
             System.out.println(multiValueDict.keyExists(input[1]));
-        } else if(input[0].equalsIgnoreCase(Constants.VALUEEXISTS)) {
+        } else if(input.length == 3 && input[0].equalsIgnoreCase(Constants.VALUEEXISTS)) {
             System.out.println(multiValueDict.valueExists(input[1], input[2]));
         } else if(input[0].equalsIgnoreCase(Constants.ALLMEMBERS)) {
             printCollection(multiValueDict.getAllMembers());

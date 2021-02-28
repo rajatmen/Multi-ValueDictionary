@@ -17,7 +17,7 @@
 
 ## System Requirements: 
     - Java 8 used to create application 
-##Steps to build and run Multi-Value Dictionary command line application:
+## Steps to build and run Multi-Value Dictionary command line application:
     - Clone repo
     - Navigate to src/com/company directory
     - Use javac command to compile java project (example below):
